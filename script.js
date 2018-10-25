@@ -12,7 +12,7 @@ function addBola() {
     var p2 = Math.floor(Math.random() * 400);
 
     //setando, ou melhor, atribuindo os valores a nossa div criada la em cima
-    bola.setAttribute('style', 'left:'+p1+'px; top: '+p2+ 'px; background-color: red');
+    bola.setAttribute('style', 'left:'+p1+'px; top: '+p2+ 'px; background-color: rgb('+ Math.floor(Math.random() * 255) +','+ Math.floor(Math.random() * 255) + ','+ Math.floor(Math.random() * 255) +')');
 
 
     //criando e evento de estourar no elemento bola
