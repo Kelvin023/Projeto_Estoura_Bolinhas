@@ -1,6 +1,14 @@
 //Funcao para addicionar bolinhas a cada qtd de tempo
 window.onload  = function(){
     setInterval(addBola, 1000); //vai executar a fç 'passarSlide' a cada 3 segundos
+    setInterval(incrementador, 1000);
+}
+
+var i = 0; 
+function incrementador() {
+    document.getElementById('tempo').innerHTML = i+'s';
+    console.log('Coisa: ' + i);
+    i++;
 }
 
 function addBola() {
